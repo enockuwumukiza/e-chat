@@ -4,7 +4,7 @@ let socket: Socket | null = null;
 
 export const socketInstance = () => {
     if (!socket) {
-        socket = io('https://echat-fieq.onrender.com', {
+        socket = io('https://e-chat-backend-sevs.onrender.com', {
             autoConnect:false
         })
     }

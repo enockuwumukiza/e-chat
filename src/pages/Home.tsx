@@ -52,7 +52,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axios.get('https://echat-fieq.onrender.com/api/users/getContacts', {
+        const response = await axios.get('https://e-chat-backend-sevs.onrender.com/api/users/getContacts', {
           withCredentials: true
         });
 
@@ -80,7 +80,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axios.get('https://echat-fieq.onrender.com/api/users/getContactsMe', {
+        const response = await axios.get('https://e-chat-backend-sevs.onrender.com/api/users/getContactsMe', {
           withCredentials: true
         });
 

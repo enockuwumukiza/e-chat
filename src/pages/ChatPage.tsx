@@ -137,7 +137,7 @@ const ChatPage: React.FC = () => {
           if (receiverInfo?._id) {
             setDisplayMessages([]);
             setMessageLoading(true);
-            const response = await axios.get(`https://echat-fieq.onrender.com/api/messages/single/${receiverInfo?._id}`, {
+            const response = await axios.get(`https://e-chat-backend-sevs.onrender.com/api/messages/single/${receiverInfo?._id}`, {
             withCredentials: true,
           });
 
@@ -168,7 +168,7 @@ const ChatPage: React.FC = () => {
           if (groupId) {
             setDisplayGroupMessages([]);
             setMessageLoading(true);
-            const response = await axios.get(`https://echat-fieq.onrender.com/api/groups/messages/${groupId}`, {
+            const response = await axios.get(`https://e-chat-backend-sevs.onrender.com/api/groups/messages/${groupId}`, {
             withCredentials: true,
             headers: {
             

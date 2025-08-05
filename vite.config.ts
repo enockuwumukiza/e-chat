@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'https://echat-fieq.onrender.com',
+        target: 'https://e-chat-backend-sevs.onrender.com',
         changeOrigin: true
       }
     }
