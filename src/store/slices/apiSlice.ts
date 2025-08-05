@@ -4,7 +4,7 @@ const baseQuery = fetchBaseQuery({
   baseUrl: import.meta.env.DEV
     ? '/api' // Use proxy for local development
     : 'https://e-chat-backend-sevs.onrender.com/api', // Use full backend URL in production
-  credentials: 'include' // if using cookies/auth
+  credentials: 'include' 
 });
 
 export const apiSlice = createApi({
