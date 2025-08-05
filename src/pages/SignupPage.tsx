@@ -47,6 +47,7 @@ const SignupPage: React.FC = () => {
 
             const response = await registerUser(formData).unwrap();
             login(response);
+            await new Promise(resolve => setTimeout(resolve, 100)); // Add a small delay
             navigate('/');
 
         } catch (error: any) {

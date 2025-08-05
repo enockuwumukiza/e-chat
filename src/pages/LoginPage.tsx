@@ -33,6 +33,7 @@ const LoginPage: React.FC = () => {
         try {
             const response = await loginUser({email: data?.email, password: data?.password }).unwrap();
             login(response);
+            await new Promise(resolve => setTimeout(resolve, 100)); // Add a small delay
             navigate('/');
 
         } catch (error: any) {
